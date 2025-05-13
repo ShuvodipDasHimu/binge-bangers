@@ -1,12 +1,38 @@
-# React + Vite
+# 🎬 Binge Bangers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Binge Bangers** is a fast and minimal movie discovery app that lets users **search for movies** and explore **trending titles** based on the most searched movies. Built with React + Vite, powered by TMDB API for movie data and Appwrite for tracking search popularity.
 
-Currently, two official plugins are available:
+![Binge Bangers Screenshot](./public/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [binge-bangers.vercel.app](https://binge-bangers.vercel.app/)
+
+---
+
+## 📌 Features
+
+- 🔍 **Instant Movie Search** with debounce functionality
+- 🔥 **Trending Section** showing most searched movies by users
+- 🎨 Clean and responsive UI with Tailwind CSS
+- 📈 **Appwrite Integration** to log and update search statistics
+- ⚡ Blazing fast using Vite and modern React hooks
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite, Tailwind CSS
+- **API**: [TMDB API](https://www.themoviedb.org/documentation/api)
+- **Database**: [Appwrite](https://appwrite.io)
+- **Deployment**: [Vercel](https://vercel.com)
+
+---
+
+## 🧠 How It Works
+
+1. User types a movie name → debounced search triggers TMDB API.
+2. The first result is sent to Appwrite to track how many times it was searched.
+3. Trending section dynamically shows the most searched movies with poster thumbnails.
